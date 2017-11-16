@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AlaskaRoom - аренда квартир для студентов</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script> 
+		<link rel="stylesheet"  href="js/jquery-ui.min.css">
+		<script>
+			$( function() {
+				$( "#datepicker" ).datepicker();
+			} );
+		</script>
+	</head>
+	<body>
+		<div class="top">
+			<a href="#" class="top-logo"> ALASKA ROOM</a>
+			<a class="top-menu" href="#">ВХОД</a>
+			<a class="top-menu menu-prime" href="#">Ищу румейта</a>
+		</div>
+		<div class="wrp">
+			<div class="advert">
+				<h2>Привет, Влад! Расскажи немного о себе:</h2>
+				<div class="adv-user">
+					<img class="user-photo" src="images/photo.jpg" alt="User photo">
+					<div class="user-info">
+						<a href="#" >РЕДАКТИРОВАТЬ</a>
+						<p>Имя: <span>Влад</span></p>
+						<p>Год рождения: <span>10.10.2010</span></p>
+						<p>Город: <span>Ростов-на-Дону</span></p>
+						<p>Университет: <span>ЮФУ</span></p>
+						<p>Факультет: <span>Регионоведение</span></p>
+						<p>О себе: <span></span></p>
+					</div>
+					<div class="look-for">
+						<h2>Я ИЩУ</h2>
+						<button>Румейта</button>
+						<p>или</p>
+						<button>Квартиру</button>
+					</div>
+					<div class="room-info">
+						<h2>ИНФО О КВАРТИРЕ</h2>
+						<textarea placeholder="Описание квартиры"></textarea>
+						<input class="small-input" type="text" name="address" placeholder="Адрес">
+						<input class="small-input" type="text" name="square" placeholder="Площадь">
+						<input class="small-input" type="text" name="rooms" placeholder="Кол-во комнат">
+						<input class="regular-input" type="text" name="trafic" placeholder="Общественный транспорт">
+					</div>
+					<div class="conditions">
+						<h2>СТОИМОСТЬ И УСЛОВИЯ ПРОЖИВАНИЯ</h2>
+						<input class="small-input" type="text" name="room-pay" placeholder="Плата румейта" required maxlength="200">
+						<input class="small-input" type="text" name="rent-pay" placeholder="Общая аренда">
+						<input class="small-input" type="text" name="enter-date" id="datepicker" placeholder="Дата въезда">
+						<select class="option-input" size="1" name="user_sex[]">
+							<option selected >Не важно с кем</option>
+							<option value="woman">Только с девушками</option>
+							<option value="man">Только с парнями</option>
+						</select>
+					   <p>С КЕМ ВЫ ХОТИТЕ СНИМАТЬ КВАРТИРУ?</p>
+					   <select class="option-input" size="1" name="user_age[]">
+							<option selected >Не важен</option>
+							<option value="young">18-25</option>
+							<option value="middle">18-30</option>
+						</select>
+					   <p>ВАЖЕН ЛИ ВОЗРАСТ?</p>
+					   <select class="option-input" size="1" name="user_mood[]">
+							<option selected >Не важна</option>
+							<option value="intro">Интроверт</option>
+							<option value="extra">Экстраверт</option>
+						</select>
+					   <p>СОЦИАЛЬНАЯ АКТИВНОСТЬ?</p>
+					   <select class="option-input" size="1" name="user_habits[]">
+							<option selected >Не важно</option>
+							<option value="smoke">Курит</option>
+							<option value="smoke-drink">Курит и пьет</option>
+							<option value="nonsmoke">Не курит и не пьет</option>
+						</select>
+					   <p>ВРЕДНЫЕ ПРИВЫЧКИ?</p>
+					   <select class="option-input" size="1" name="user_pets[]">
+							<option selected >Не важно</option>
+							<option value="small-pet">Небольшие только</option>
+							<option value="any-pet">Обожаю живность</option>
+						</select>
+					   <p>ДОМАШНИЕ ЖИВОТНЫЕ?</p>
+					   <select class="option-input" size="1" name="user_car[]">
+							<option selected >Не важно</option>
+							<option value="got-car">Есть</option>
+							<option value="no-car">Нет</option>
+						</select>
+					   <p>НАЛИЧИЕ МАШИНЫ?</p>
+					   <select class="option-input" size="1" name="user_univer[]">
+							<option selected >Не важно</option>
+							<option value="">РИНХ</option>
+							<option value="">ЮФУ</option>
+						</select>
+					   <p>НУЖЕН СОСЕД С ОПРЕДЕЛЕННОГО ВУЗА?</p>
+					   <select class="option-input" size="1" name="user_success[]">
+							<option selected >Не важно</option>
+							<option value="good"> Хорошист</option>
+							<option value="soso">Отличник</option>
+						</select>
+					   <p>ВАЖНА ЛИ УСПЕВАЕМОСТЬ СТУДЕНТА?</p>
+					</div>
+					<div class="utilities">
+						<h2>УДОБСТВА В КВАРТИРЕ</h2>
+						<label><input type="checkbox"/> Кондиционер</label>
+						<label><input type="checkbox"/> Кофемашина</label>
+						<label><input type="checkbox"/> Парковка</label>
+						<label><input type="checkbox"/> Транстпорт</label>
+						<label><input type="checkbox"/> Интернет</label>
+					</div>
+					<div class="room-photos">
+						<h2>ЗАГРУЗИТЕ ФОТО КВАРТИРЫ</h2>
+						<img class="room-pic" src="images/room.jpg" alt="Room photo">
+						<img class="room-pic" src="images/room.jpg" alt="Room photo">
+						<img class="room-pic" src="images/room.jpg" alt="Room photo">
+						<img class="room-pic" src="images/room.jpg" alt="Room photo">
+						<img class="room-pic" src="images/room.jpg" alt="Room photo">
+						<img class="room-pic" src="images/room.jpg" alt="Room photo">
+					</div>
+					<input class="add-ad" type="submit" name="add_ad" value="Добавить объявление">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Copyright AlaskaRoom 2017</p>
+		</div>
+	</body>
+</html>

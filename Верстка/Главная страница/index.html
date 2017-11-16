@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AlaskaRoom - аренда квартир для студентов</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<a href="#" class="top-logo"> ALASKA ROOM</a>
+			<a class="top-menu" href="#">ВХОД</a>
+			<a class="top-menu menu-prime" href="#">Ищу румейта</a>
+		</div>
+		<div class="wrp">
+			<div class="main-page">
+				<div class="main-filter">
+					<form method="" action="">
+						<p>Я ищу</p>
+						<select class="prime-filter" size="1" name="find[]">
+						<option selected >Квартиру</option>
+						<option value="roomate">Румейта</option>
+						</select>
+						<p>С кем вы хотите снимать квартиру?</p>
+						<select class="lower-filter" size="1" name="user_sex[]">
+							<option selected >Не важно с кем</option>
+							<option value="woman">Только с девушками</option>
+							<option value="man">Только с парнями</option>
+						</select>
+						<p>Важен ли возраст?</p>
+					   <select class="lower-filter" size="1" name="user_age[]">
+							<option selected >Не важен</option>
+							<option value="young">18-25</option>
+							<option value="middle">18-30</option>
+						</select>
+					   <p>Социальная активность?</p>
+					   <select class="lower-filter" size="1" name="user_mood[]">
+							<option selected >Не важна</option>
+							<option value="intro">Интроверт</option>
+							<option value="extra">Экстраверт</option>
+						</select>
+					   <p>Вредные привычки?</p>
+					   <select class="lower-filter" size="1" name="user_habits[]">
+							<option selected >Не важно</option>
+							<option value="smoke">Курит</option>
+							<option value="smoke-drink">Курит и пьет</option>
+							<option value="nonsmoke">Не курит и не пьет</option>
+						</select>
+					   <p>Домашние животные?</p>
+					   <select class="lower-filter" size="1" name="user_pets[]">
+							<option selected >Не важно</option>
+							<option value="small-pet">Небольшие только</option>
+							<option value="any-pet">Обожаю живность</option>
+						</select>
+					   <p>Наличие машины?</p>
+					   <select class="lower-filter" size="1" name="user_car[]">
+							<option selected >Не важно</option>
+							<option value="got-car">Есть</option>
+							<option value="no-car">Нет</option>
+						</select>
+					   <p>Нужен сосед с определенного ВУЗа?</p>
+					   <select class="lower-filter" size="1" name="user_univer[]">
+							<option selected >Не важно</option>
+							<option value="">РИНХ</option>
+							<option value="">ЮФУ</option>
+						</select>
+					   <p>Важна ли успеваемость студента?</p>
+					   <select class="lower-filter" size="1" name="user_success[]">
+							<option selected >Не важно</option>
+							<option value="good"> Хорошист</option>
+							<option value="soso">Отличник</option>
+						</select>
+					</form>
+					<a class="find-filter" href="#">Найти</a>
+				</div>
+				<div class="listing">
+					<div class="user-list">
+						<img src="images/photo.jpg" alt="User">
+						<h4>Влад Заев</h4>
+						<p>Ваш сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="user-list">
+						<img src="images/photo.jpg" alt="User">
+						<h4>Влад Заев</h4>
+						<p>Ваш сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="user-list">
+						<img src="images/photo.jpg" alt="User">
+						<h4>Влад Заев</h4>
+						<p>Ваш сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="room-list">
+						<img src="images/room.jpg" alt="Room">
+						<h5>5000 рублей</h5>
+						<h4>Ростов-на-Дону, Комбайностроительный переулок 76</h4>
+						<p>Сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="room-list">
+						<img src="images/room1.jpg" alt="Room">
+						<h5>5000 рублей</h5>
+						<h4>Ростов-на-Дону, Комбайностроительный переулок 76</h4>
+						<p>Сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="room-list">
+						<img src="images/room2.jpg" alt="Room">
+						<h5>5000 рублей</h5>
+						<h4>Ростов-на-Дону, Комбайностроительный переулок 76</h4>
+						<p>Сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="room-list">
+						<img src="images/room.jpg" alt="Room">
+						<h5>5000 рублей</h5>
+						<h4>Ростов-на-Дону, Комбайностроительный переулок 76</h4>
+						<p>Сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="room-list">
+						<img src="images/room1.jpg" alt="Room">
+						<h5>5000 рублей</h5>
+						<h4>Ростов-на-Дону, Комбайностроительный переулок 76</h4>
+						<p>Сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<div class="room-list">
+						<img src="images/room2.jpg" alt="Room">
+						<h5>5000 рублей</h5>
+						<h4>Ростов-на-Дону, Комбайностроительный переулок 76</h4>
+						<p>Сосед: M, 21, РГЭУ РИНХ</p>
+					</div>
+					<a class="load-more" href="#">Загрузить больше...</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Copyright AlaskaRoom 2017</p>
+		</div>
+		<div class="auth-popup">
+			<a class="close-auth" href="">Х</a>
+			<h3>Мы сделали вход через ВК, чтобы доступ имели только студенты</h3>
+			<a class="enter-site" href="" >Войти через ВК</a>
+		</div>
+	</body>
+</html>
