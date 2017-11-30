@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AlaskaRoom - аренда квартир для студентов</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="../css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/filter mobile.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<a href="#" class="logo">AlaskaRoom</a>
+			<a href="#" class="user-profile">Профиль</a>
+			<a href="#" class="mbl-viev mbl-profile"><img src="../images/usericon.png" alt="profile"/></a>
+			<div class="top-nav">
+				<a href="#">Поиск</a>
+				<a href="#">Отклики</a>
+				<a href="#">Факультет</a>
+			</div>
+		</div>
+		
+		<div class="wrp">
+			<div class="roommate-header">
+				<h6>Пару слов о вас</h6>
+			</div>
+			<div class="profile-user">
+				<img src="../images/photo.jpg" alt="User">
+				<h3>Владилен Александрович</h3>
+				<p>21 год, РГЭУ РИНХ, Лингвистики и Журналистики, Межкультурных коммуникаций<p>
+				<input type="button" class="request-info" value="Предложить соседство">
+				<input type="button" class="complain" value="Жалоба на румейта">
+				<h4>Наши румейты сами могут блокировать недобросовестных пользователей! Пожалуйста, не регистрируйтесь, если вы уже не студент.</h4>
+			</div>
+			<div class="profile-param">
+				<div class="user-desc">
+					<h3>Обо мне</h3>
+					<textarea placeholder="Напишите тут несколько предложений о себе ..."></textarea>
+				</div>
+				<div class="user-setting">
+					<div>
+						<p>Страна вашего ВУза</p>
+						<select class="option-set" size="1" name="user_sex[]">
+							<option selected >Не важно с кем</option>
+							<option value="woman">Только с девушками</option>
+							<option value="man">Только с парнями</option>
+						</select>
+					</div>
+					<div>
+						<p>Город вашего ВУЗа</p>
+						<select class="option-set" size="1" name="user_age[]">
+							<option selected >Не важен</option>
+							<option value="young">18-25</option>
+							<option value="middle">18-30</option>
+						</select>
+					</div>
+					<div>
+						<p>Название вашего ВУЗа</p>
+						<select class="option-set" size="1" name="user_mood[]">
+							<option selected >Не важна</option>
+							<option value="intro">Интроверт</option>
+							<option value="extra">Экстраверт</option>
+						</select>
+					</div>
+					<div>
+						<p>Ваш факультет</p>
+						<select class="option-set" size="1" name="user_habits[]">
+							<option selected >Не важно</option>
+							<option value="smoke">Курит</option>
+							<option value="smoke-drink">Курит и пьет</option>
+							<option value="nonsmoke">Не курит и не пьет</option>
+						</select>
+					</div>
+					<div>
+						<p>Ваша специальность</p>
+						<select class="option-set" size="1" name="user_habits[]">
+							<option selected >Не важно</option>
+							<option value="smoke">Курит</option>
+							<option value="smoke-drink">Курит и пьет</option>
+							<option value="nonsmoke">Не курит и не пьет</option>
+						</select>
+					</div>
+					<div>
+						<p>Ваш курс</p>
+						<select class="option-set" size="1" name="user_habits[]">
+							<option selected >Не важно</option>
+							<option value="smoke">Курит</option>
+							<option value="smoke-drink">Курит и пьет</option>
+							<option value="nonsmoke">Не курит и не пьет</option>
+						</select>
+					</div>
+				</div>
+				<div class="user-setting">
+					<div>
+						<p>С кем вы хотите снимать квартиру?</p>
+						<select class="option-set" size="1" name="user_sex[]">
+							<option selected >Не важно с кем</option>
+							<option value="woman">Только с девушками</option>
+							<option value="man">Только с парнями</option>
+						</select>
+					</div>
+					<div>
+						<p>Важен ли возраст вашего соседа по комнате?</p>
+						<select class="option-set" size="1" name="user_age[]">
+							<option selected >Не важен</option>
+							<option value="young">18-25</option>
+							<option value="middle">18-30</option>
+						</select>
+					</div>
+					<div>
+						<p>Социальная активность румейта?</p>
+						<select class="option-set" size="1" name="user_mood[]">
+							<option selected >Не важна</option>
+							<option value="intro">Интроверт</option>
+							<option value="extra">Экстраверт</option>
+						</select>
+					</div>
+					<div>
+						<p>Вредные привычки?</p>
+						<select class="option-set" size="1" name="user_habits[]">
+							<option selected >Не важно</option>
+							<option value="smoke">Курит</option>
+							<option value="smoke-drink">Курит и пьет</option>
+							<option value="nonsmoke">Не курит и не пьет</option>
+						</select>
+					</div>
+					<div>
+						<p>Домашние животные?</p>
+						<select class="option-set" size="1" name="user_pets[]">
+							<option selected >Не важно</option>
+							<option value="small-pet">Небольшие только</option>
+							<option value="any-pet">Обожаю живность</option>
+						</select>
+					</div>
+					<div>
+						<p>Наличие машины?</p>
+						<select class="option-set" size="1" name="user_car[]">
+							<option selected >Не важно</option>
+							<option value="got-car">Есть</option>
+							<option value="no-car">Нет</option>
+						</select>
+					</div>
+					<div>
+						<p>Нужен сосед с определенного ВУЗа?</p>
+						<select class="option-set" size="1" name="user_univer[]">
+							<option selected >Не важно</option>
+							<option value="">РИНХ</option>
+							<option value="">ЮФУ</option>
+						</select>
+					</div>
+					<div>
+						<p>Сколько платите \ готовы платить за аренду?</p>
+						<input class="option-set-small" type="text" name="room-pay" placeholder="Плата румейта" required maxlength="200">
+					</div>
+					<div>
+						<input type="button" class="save-btn" name="" value="Сохранить">
+					</div>
+				</div>
+				<p class="add-room">У вас есть квартира и вы ищите соседа? <a href="#">Рассказать про квартиру и условия</a></p>
+			</div>
+			<div class="roommate-header">
+				<h6>Описание квартиры</h6>
+			</div>
+			<div class="room-photos">
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+				<div>
+					<img src="../images/room.jpg" alt="Room photo">
+					<a href="#">Удалить</a>
+				</div>
+			</div>
+			<div class="profile-param">
+				<div class="user-desc">
+					<textarea placeholder="Напишите тут несколько предложений о квартире ..."></textarea>
+				</div>
+				<div class="user-setting">
+						<input class="option-set-big" type="text" name="room-pay" placeholder="Адрес квартиры" required maxlength="200">
+					<div>
+						<input class="option-set-small" type="text" name="room-pay" placeholder="Площадь квартиры" required maxlength="200">
+					</div>
+					<div>
+						<input class="option-set-small" type="text" name="room-pay" placeholder="Количество комнат" required maxlength="200">
+					</div>
+					<div>
+						<input class="option-set-small" type="text" name="room-pay" placeholder="Ближайший транспорт" required maxlength="200">
+					</div>
+					<div>
+						<input class="option-set-small" type="text" name="room-pay" placeholder="Общая аренда, руб" required maxlength="200">
+					</div>
+					<div>
+						<input class="option-set-small" type="text" name="room-pay" placeholder="Плата для соседа, руб" required maxlength="200">
+					</div>
+					<div>
+						<input class="option-set-small" type="text" name="room-pay" placeholder="Дата въезда" required maxlength="200">
+					</div>
+				</div>
+				<div class="user-setting">
+					<label><input type="checkbox"/> Кондиционер</label>
+					<label><input type="checkbox"/> Кофемашина</label>
+					<label><input type="checkbox"/> Стиральная машина</label>
+					<label><input type="checkbox"/> Свой душ \ туалет</label>
+					<label><input type="checkbox"/> Парковка</label>
+					<label><input type="checkbox"/> Транстпорт</label>
+					<label><input type="checkbox"/> Интернет</label>
+				</div>
+				<input type="button" name="final-ad" class="final-ad" value="Сохранить объявление">
+			</div>
+		</div>
+		
+		<div class="footer">
+			<p>Copyright Alaskaroom 2017</p>
+		</div>
+	</body>
+</html>
